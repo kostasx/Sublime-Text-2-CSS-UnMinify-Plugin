@@ -1,4 +1,3 @@
-Sublime-Text-2-CSS-UnMinify-Plugin
-==================================
+# CSS UnMinify
 
-Sublime Text 2 Plugin that unminifies CSS files.
+A Sublime plugin that un-minifies minified CSS files.
