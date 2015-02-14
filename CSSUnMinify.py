@@ -21,5 +21,5 @@ class CssUnminifyCommand(sublime_plugin.WindowCommand):
     def unminify(self, contents):
         unminified = re.sub("\{", " {\n\r\n\r\t", contents)
         unminified = re.sub("\}", "\n\r\n\r}\n\r\n\r", unminified)
-        unminified = re.sub(";", ";\n\r\t", unminified)
+        unminified = re.sub(";(?!base64)", ";\n\r\t", unminified)
         return unminified
